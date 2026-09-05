@@ -20,7 +20,7 @@ loginBtn.forEach(button => {
 console.log(loginBtn);
 
 document.getElementById('login-form').addEventListener('submit', function (e) {
-    e.preventDefault();
+    e.preventDefault()
 
     const usernameInput = document.getElementById('user-name').value;
     const passwordInput = document.getElementById('master-pass').value;
@@ -47,3 +47,12 @@ const clearError = () => {
 
 document.getElementById('user-name').addEventListener('click', clearError);
 document.getElementById('master-pass').addEventListener('click', clearError);
+
+const addEntryBtn = document.getElementById('add-entry-btn');
+const showAdd = document.getElementById('modal-overlay');
+
+addEntryBtn.addEventListener('click', function () {
+    showAdd.style.display = 'block';
+});
+
+console.log('script')
