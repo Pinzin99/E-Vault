@@ -16,3 +16,5 @@ loginBtn.forEach(button => {
         window.location.href = 'login.html'
     })
 });
+
+console.log(loginBtn);
