@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <div id="login-view">
+        <div class="side-view">
+            <h1>One password to remember.<br> Everything else, kept.</h1>
+            <p class="lead">A private vault for your logins and notes — stored locally,<br> unlocked by a single master password only you know.</p>
+            <button class="btn-create">Own a vault</button>
+        </div>
+
+        <div class="login-sides">
+            <div class="login-card">
+                <svg class="mark" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="9" y="19" width="26" height="19" rx="2.5" stroke="#fff7e6" stroke-width="2"/>
+                    <path d="M14 19v-6a8 8 0 0 1 16 0v6" stroke="#fff7e6" stroke-width="2"/>
+                    <circle cx="22" cy="28" r="2.4" fill="#fff7e6"/>
+                    <line x1="22" y1="30.4" x2="22" y2="33.5" stroke="#C9A227" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <h1>E-VAULT</h1>
+                <p class="sub">Enter your master password to unlock your vault</p>
+                <div class="login-error" id="login-error">Incorrect master password — try again.</div>
+                    <form id="login-form">
+                    <div class="field">
+                        <label for="user-name">User name</label>
+                        <input type="text" id="user-name" placeholder="user132" required>
+                        <label for="master-pass">Master password</label>
+                        <input type="password" id="master-pass" placeholder="••••••••••••" autocomplete="off" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Unlock vault</button>
+                </form>
+            </div>
+        </div>
+        </div>
+        <script src="../dom.js"></script>
+</body>
+</html>

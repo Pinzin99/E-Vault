@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Vault</title>
+</head>
+<body>
+    <div id="landing-view">
+        <nav class="landing-nav">
+            <div class="brand">
+                <img height="20px" src="lock.png" alt="lock icon">
+                <span>E-Vault</span>
+            </div>
+            <div>
+                <button class="btn-nav-login" id="btn-login">login</button>
+            </div>
+        </nav>
+
+        <div class="landing-hero">
+            <div>
+                <h1>One password to remember. Everything else, kept.</h1>
+                <p class="lead">A private vault for your logins and notes — stored locally, unlocked by a single master password only you know.</p>
+                <div class="hero-ctas">
+                <button class="btn-hero-primary" id="btn-login">Open your vault</button>
+            </div>
+        </div>
+
+        <div class="logs-visual">
+            <div class="git-row">
+                <span class="fake-site">GitHub</span>
+                <span class="fake-user">you@example.com</span>
+                <span class="fake-pass">••••••••</span>
+            </div>
+            <div class="gmail-row">
+                <span class="fake-site">Gmail</span>
+                <span class="fake-user">yourname@gmail.com</span>
+                <span class="fake-pass">••••••••••</span>
+            </div>
+            <div class="netflix-row">
+                <span class="fake-site">Netflix</span>
+                <span class="fake-user">you@example.com</span>
+                <span class="fake-pass">•••••••••</span>
+            </div>
+            <div class="pornhub-row">
+                <span class="fake-site">PornHub</span>
+                <span class="fake-user">you@example.com</span>
+                <span class="fake-pass">•••••••••</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="landing-features">
+            <div class="feature">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="10" width="16" height="11" rx="2" stroke="#F5F1E8" stroke-width="1.6"/>
+                <path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="#F5F1E8" stroke-width="1.6"/>
+            </svg>
+            <h3>One master password</h3>
+            <p>Unlock everything with a single password — nothing else to remember or reuse.</p>
+        </div>
+        <div class="feature">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" stroke="#F5F1E8" stroke-width="1.6" stroke-linejoin="round"/>
+            </svg>
+            <h3>Kept private</h3>
+            <p>Entries stay masked by default — reveal or copy only when you need them.</p>
+        </div>
+        <div class="feature">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3.5" y="5" width="17" height="14" rx="2" stroke="#F5F1E8" stroke-width="1.6"/>
+                <path d="M3.5 9h17" stroke="#F5F1E8" stroke-width="1.6"/>
+            </svg>
+            <h3>Built for one</h3>
+            <p>A simple, personal vault — no sharing, no syncing across strangers' servers.</p>
+        </div>
+    </div>
+    <script src="../dom.js"></script>
+</body>
+</html>
