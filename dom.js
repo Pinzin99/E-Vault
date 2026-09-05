@@ -13,6 +13,6 @@ const loginBtn = document.querySelectorAll('.btn-nav-login, .btn-hero-primary');
 
 loginBtn.forEach(button => {
     button.addEventListener('click', () => {
-        window.location.href = '/login.html'
+        window.location.href = 'login.html'
     })
 });
