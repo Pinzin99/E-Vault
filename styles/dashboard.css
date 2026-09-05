@@ -1,3 +1,16 @@
+ :root{
+    --bg: #45320d;
+    --surface:#141F2B;
+    --surface-alt:#1B2733;
+    --border:#C9A227;
+    --accent:#c1864b;
+    --accent-hover:#DDBC3F;
+    --text:#E8D9B5;
+    --text-muted:#8A97A6;
+    --danger:#D9695F;
+    --radius:6px;
+}
+ 
  /* ---------- DASHBOARD VIEW ---------- */
   #dashboard-view{
     max-width:840px;
@@ -37,7 +50,7 @@
     gap:6px;
     transition:border-color .15s ease;
   }
-  .btn-add:hover{ border-color:var(--accent); }
+  .btn-add:hover{ border-color:var(--accent);}
  
   .header-actions{
     display:flex;
