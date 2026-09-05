@@ -8,15 +8,16 @@ app.use(express.static(path.join(__dirname,'icons')));
 app.use(express.static(path.join(__dirname,'')));
 
 app.get('/', (req, res, next) => {
-    res.sendFile(path.join(__dirname,'views', 'index.html'))
+    res.sendFile(path.join(__dirname,'index.html'))
 })
 
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'login.html'));
+    res.sendFile(path.join(__dirname, 'login.html'));
+    
 })
 
 app.get('/dashboard/:id', (req, res) => {
-    res.sendFile(path.join(__dirname, "views", "dashboard.html"))
+    res.sendFile(path.join(__dirname, "dashboard.html"))
 })
 
 app.listen(port, () => {
